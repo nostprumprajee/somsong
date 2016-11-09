@@ -25,12 +25,76 @@
             android:gravity="center">
 
             <ImageView android:id="@+id/myImageView"
-                android:layout_width="500dp"
-                android:layout_height="500dp"
-                android:src="@drawable/w3"/>
+                android:layout_width="479dp"
+                android:layout_height="408dp"
+                />
         </LinearLayout>
 
     </FrameLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView4"
+        android:layout_below="@+id/mySurfaceView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mySurfaceView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton6"
+                android:background="@drawable/w3"
+                android:onClick="OnClickm1"
+                android:layout_below="@+id/mySurfaceView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton7"
+                android:background="@drawable/w4"
+                android:onClick="OnClickm1"
+                android:layout_below="@+id/mySurfaceView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton8"
+                android:background="@drawable/w7"
+                android:onClick="OnClickm1"
+                android:layout_below="@+id/mySurfaceView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton9"
+                android:background="@drawable/w6"
+                android:onClick="OnClickm1"
+                android:layout_below="@+id/mySurfaceView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton10"
+                android:background="@drawable/w9"
+                android:onClick="OnClickm1"
+                android:layout_below="@+id/mySurfaceView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+    </HorizontalScrollView>
 
 
 </RelativeLayout>

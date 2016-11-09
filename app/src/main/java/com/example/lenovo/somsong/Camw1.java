@@ -11,8 +11,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 import java.util.List;
 
@@ -31,6 +33,26 @@ public class Camw1 extends Activity implements SurfaceHolder.Callback {
         mPreview = (SurfaceView) findViewById(R.id.preview);
         mPreview.getHolder().addCallback(this);
         mPreview.getHolder().setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+    }
+    public void OnClickm6(View view) {
+        ImageView mm = (ImageView) findViewById(R.id.myImageView);
+        mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.w3));
+    }
+    public void OnClickm7(View view) {
+        ImageView mm = (ImageView) findViewById(R.id.myImageView);
+        mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.w4));
+    }
+    public void OnClickm8(View view) {
+        ImageView mm = (ImageView) findViewById(R.id.myImageView);
+        mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.w7));
+    }
+    public void OnClickm9(View view) {
+        ImageView mm = (ImageView) findViewById(R.id.myImageView);
+        mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.w6));
+    }
+    public void OnClickm10(View view) {
+        ImageView mm = (ImageView) findViewById(R.id.myImageView);
+        mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.w9));
     }
 
     public int getFrontCameraId() {
