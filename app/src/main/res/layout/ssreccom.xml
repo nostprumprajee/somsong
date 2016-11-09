@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/somsongrec"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="185dp"
+            android:id="@+id/button2"
+            android:layout_gravity="top"
+            android:background="#00ffffff"
+            android:layout_weight="0.08" />
+
+        <Button
+            android:layout_width="305dp"
+            android:layout_height="69dp"
+            android:id="@+id/pop"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/popbot"
+            android:onClick="OnClickpop" />
+        <Button
+            android:layout_width="307dp"
+            android:layout_height="75dp"
+            android:id="@+id/face"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/facebot"
+            android:onClick="OnClickface"
+            android:layout_margin="50dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.somsong">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Home"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Ssreccom"/>
+        <activity android:name=".Pop"/>
+        <activity android:name=".Face"/>
+        <activity android:name=".Kom"/>
+        <activity android:name=".Ssdesign"/>
+        <activity android:name=".Derectang"/>
+        <activity android:name=".Popwo"/>
+        <activity android:name=".Popman"/>
+        <activity android:name=".Diamond"/>
+        <activity android:name=".Rec"/>
+        <activity android:name=".Re"/>
+        <activity android:name=".Dere"/>
+        <activity android:name=".Myss"/>
+
+        <activity android:name=".Camm1"/>
+        <activity android:name=".Camm2"/>
+        <activity android:name=".Camm3"/>
+
+        <activity android:name=".Dekom"/>
+
+        <activity android:name=".Camw1"/>
+        <activity android:name=".Camw2"/>
+        <activity android:name=".Camw3"/>
+
+        <activity android:name=".Dedai"/>
+        <activity android:name=".Cameram1"/>
+        <activity android:name=".Tryss"/>
+    </application>
+
+</manifest>
