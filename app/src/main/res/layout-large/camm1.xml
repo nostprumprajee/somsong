@@ -27,8 +27,8 @@
             android:gravity="center">
 
             <ImageView android:id="@+id/myImageView"
-                android:layout_width="479dp"
-                android:layout_height="408dp"
+                android:layout_width="match_parent"
+                android:layout_height="620dp"
                 />
         </LinearLayout>
 
