@@ -40,6 +40,7 @@ public class Tryss extends Activity {
         ImageButton ssdebut = (ImageButton)findViewById(R.id.button12);
         Intent intent3 = new Intent(Tryss.this,Camw2.class);
         startActivity(intent3);
+         int a=0 ;
     }
     public void OnClickw3(View view){
         ImageButton ssdebut = (ImageButton)findViewById(R.id.button13);
