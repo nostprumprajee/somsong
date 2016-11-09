@@ -29,7 +29,6 @@
             <ImageView android:id="@+id/myImageView"
                 android:layout_width="479dp"
                 android:layout_height="408dp"
-
                 />
         </LinearLayout>
 
@@ -55,8 +54,8 @@
             android:layout_alignParentStart="true">
 
             <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:id="@+id/imageButton3"
                 android:background="@drawable/m1"
                 android:onClick="OnClickm1"
@@ -65,8 +64,8 @@
                 android:layout_toEndOf="@+id/imageButton2" />
 
             <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:id="@+id/imageButton"
                 android:background="@drawable/m2"
                 android:onClick="OnClickm2"
@@ -75,8 +74,8 @@
                 android:layout_alignParentStart="true" />
 
             <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:id="@+id/imageButton2"
                 android:background="@drawable/m7"
                 android:layout_alignWithParentIfMissing="false"
@@ -86,8 +85,8 @@
                 android:layout_toEndOf="@+id/imageButton" />
 
             <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:id="@+id/imageButton4"
                 android:background="@drawable/m5"
                 android:layout_alignWithParentIfMissing="false"
@@ -97,8 +96,8 @@
                 android:layout_toEndOf="@+id/imageButton" />
 
             <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:id="@+id/imageButton5"
                 android:background="@drawable/m9"
                 android:layout_alignWithParentIfMissing="false"

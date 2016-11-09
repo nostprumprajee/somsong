@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home">
+
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/woman"
+        android:id="@+id/button12"
+        android:onClick="onClickwoman"
+
+
+        android:layout_alignTop="@+id/button6"
+        android:layout_toRightOf="@+id/button6"
+        android:layout_toEndOf="@+id/button6"
+        android:layout_marginLeft="@dimen/botmanwomenmargin"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/man"
+        android:id="@+id/button6"
+        android:layout_marginLeft="0dp"
+
+
+        android:onClick="OnClickman"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="204dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
