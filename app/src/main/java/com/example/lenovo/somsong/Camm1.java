@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.hardware.Camera;
 import android.os.Bundle;
@@ -26,6 +27,8 @@ import android.view.WindowManager;
 import android.app.Activity;
 import android.hardware.Camera.CameraInfo;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Camm1 extends Activity implements SurfaceHolder.Callback {
@@ -45,6 +48,23 @@ public class Camm1 extends Activity implements SurfaceHolder.Callback {
         mPreview.getHolder().setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 
 
+    }
+    public void OnClickm1(View view){
+       // ImageButton ssdebut = (ImageButton)findViewById(R.id.imageButton3);
+        ImageView mm = (ImageView)findViewById(R.id.myImageView);
+        mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.m1));
+       // Intent intenttt = new Intent(Camm1.this,Camm1.class);
+       // startActivity(intenttt);
+    }
+    public void OnClickm2(View view) {
+        ImageButton ssdebut = (ImageButton)findViewById(R.id.imageButton);
+        //Intent intent2 = new Intent(Camm1.this, Camm2.class);
+       // startActivity(intent2);
+    }
+    public void OnClickm3(View view){
+        ImageButton ssdebut = (ImageButton)findViewById(R.id.imageButton2);
+        //Intent intent3 = new Intent(Camm1.this,Camm1.class);
+        //startActivity(intent3);
     }
     public int getFrontCameraId() {
         CameraInfo ci = new CameraInfo();
