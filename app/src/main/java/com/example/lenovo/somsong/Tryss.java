@@ -26,9 +26,7 @@ public class Tryss extends Activity {
         Button  ssdebut = (Button)findViewById(R.id.button12);
         Intent intent3 = new Intent(Tryss.this,Camw1.class);
         startActivity(intent3);
-        int ii ;
-        int jj;
-
+        
 
     }
 
