@@ -57,14 +57,26 @@ public class Camm1 extends Activity implements SurfaceHolder.Callback {
        // startActivity(intenttt);
     }
     public void OnClickm2(View view) {
-        ImageButton ssdebut = (ImageButton)findViewById(R.id.imageButton);
+        ImageView mm = (ImageView)findViewById(R.id.myImageView);
+        mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.m2));
+        //ImageButton ssdebut = (ImageButton)findViewById(R.id.imageButton);
         //Intent intent2 = new Intent(Camm1.this, Camm2.class);
        // startActivity(intent2);
     }
     public void OnClickm3(View view){
-        ImageButton ssdebut = (ImageButton)findViewById(R.id.imageButton2);
+        ImageView mm = (ImageView)findViewById(R.id.myImageView);
+        mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.m7));
+        //ImageButton ssdebut = (ImageButton)findViewById(R.id.imageButton2);
         //Intent intent3 = new Intent(Camm1.this,Camm1.class);
         //startActivity(intent3);
+    }
+    public void OnClickm4(View view) {
+        ImageView mm = (ImageView) findViewById(R.id.myImageView);
+        mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.m5));
+    }
+    public void OnClickm5(View view) {
+        ImageView mm = (ImageView) findViewById(R.id.myImageView);
+        mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.m9));
     }
     public int getFrontCameraId() {
         CameraInfo ci = new CameraInfo();

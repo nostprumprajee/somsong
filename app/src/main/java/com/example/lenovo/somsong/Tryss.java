@@ -16,20 +16,15 @@ public class Tryss extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tryss);
     }
+    public void OnClickman(View view){
+        Button  ssdebut = (Button)findViewById(R.id.button6);
+        Intent intent3 = new Intent(Tryss.this,Camm1.class);
+        startActivity(intent3);
+    }
 
-    public void OnClickw1(View view){
-        ImageButton ssdebut = (ImageButton)findViewById(R.id.button6);
+    public void onClickwoman(View view){
+        Button  ssdebut = (Button)findViewById(R.id.button12);
         Intent intent3 = new Intent(Tryss.this,Camw1.class);
-        startActivity(intent3);
-    }
-    public void OnClickw2(View view){
-        ImageButton ssdebut = (ImageButton)findViewById(R.id.button12);
-        Intent intent3 = new Intent(Tryss.this,Camw2.class);
-        startActivity(intent3);
-    }
-    public void OnClickw3(View view){
-        ImageButton ssdebut = (ImageButton)findViewById(R.id.button13);
-        Intent intent3 = new Intent(Tryss.this,Camw3.class);
         startActivity(intent3);
         int ii ;
         int jj;
