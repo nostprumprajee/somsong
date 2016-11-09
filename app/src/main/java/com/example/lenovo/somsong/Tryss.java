@@ -45,6 +45,7 @@ public class Tryss extends Activity {
         ImageButton ssdebut = (ImageButton)findViewById(R.id.button13);
         Intent intent3 = new Intent(Tryss.this,Camw3.class);
         startActivity(intent3);
+        int a=0;
     }
 
 
