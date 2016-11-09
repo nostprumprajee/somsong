@@ -53,7 +53,7 @@
                 android:layout_height="100dp"
                 android:id="@+id/imageButton6"
                 android:background="@drawable/w3"
-                android:onClick="OnClickm1"
+                android:onClick="OnClickm6"
                 android:layout_below="@+id/mySurfaceView"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -62,7 +62,7 @@
                 android:layout_height="100dp"
                 android:id="@+id/imageButton7"
                 android:background="@drawable/w4"
-                android:onClick="OnClickm1"
+                android:onClick="OnClickm7"
                 android:layout_below="@+id/mySurfaceView"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -71,7 +71,7 @@
                 android:layout_height="100dp"
                 android:id="@+id/imageButton8"
                 android:background="@drawable/w7"
-                android:onClick="OnClickm1"
+                android:onClick="OnClickm8"
                 android:layout_below="@+id/mySurfaceView"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -80,7 +80,7 @@
                 android:layout_height="100dp"
                 android:id="@+id/imageButton9"
                 android:background="@drawable/w6"
-                android:onClick="OnClickm1"
+                android:onClick="OnClickm9"
                 android:layout_below="@+id/mySurfaceView"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
@@ -89,7 +89,7 @@
                 android:layout_height="100dp"
                 android:id="@+id/imageButton10"
                 android:background="@drawable/w9"
-                android:onClick="OnClickm1"
+                android:onClick="OnClickm10"
                 android:layout_below="@+id/mySurfaceView"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
