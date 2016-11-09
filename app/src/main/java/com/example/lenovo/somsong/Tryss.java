@@ -17,17 +17,17 @@ public class Tryss extends Activity {
         setContentView(R.layout.tryss);
     }
     public void OnClickman(View view){
-        Button  ssdebut = (Button)findViewById(R.id.button6);
+
         Intent intent3 = new Intent(Tryss.this,Camm1.class);
         startActivity(intent3);
     }
 
     public void onClickwoman(View view){
-        Button  ssdebut = (Button)findViewById(R.id.button12);
+
         Intent intent3 = new Intent(Tryss.this,Camw1.class);
         startActivity(intent3);
 
-//fghj
+
     }
 
 

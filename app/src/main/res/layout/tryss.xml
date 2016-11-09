@@ -15,7 +15,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="65dp"
         android:layout_marginStart="65dp"
-        android:onClick="onClickman"/>
+        android:onClick="OnClickman"/>
 
     <Button
         android:layout_width="wrap_content"

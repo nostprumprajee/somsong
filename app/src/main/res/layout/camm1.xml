@@ -3,8 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-
-
     <FrameLayout
         android:id="@+id/mySurfaceView"
         android:layout_width="wrap_content"
@@ -18,7 +16,6 @@
 
 
             />
-
         <LinearLayout
             android:layout_below="@id/mySurfaceView"
             android:layout_width="fill_parent"
@@ -30,9 +27,7 @@
                 android:layout_width="479dp"
                 android:layout_height="408dp"
                 />
-
         </LinearLayout>
-
 
     </FrameLayout>
 
@@ -105,5 +100,6 @@
                 android:layout_toEndOf="@+id/imageButton" />
         </LinearLayout>
     </HorizontalScrollView>
+
 
 </RelativeLayout>
