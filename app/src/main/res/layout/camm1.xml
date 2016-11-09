@@ -3,11 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+
     <FrameLayout
         android:id="@+id/mySurfaceView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <SurfaceView
             android:layout_width="match_parent"
@@ -29,11 +32,13 @@
                 />
         </LinearLayout>
 
-    </FrameLayout>
+
 
     <HorizontalScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
         android:id="@+id/horizontalScrollView3"
         android:layout_below="@+id/mySurfaceView"
         android:layout_alignParentLeft="true"
@@ -78,28 +83,30 @@
                 android:layout_below="@+id/mySurfaceView"
                 android:layout_toRightOf="@+id/imageButton"
                 android:layout_toEndOf="@+id/imageButton" />
+
             <ImageButton
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/imageButton4"
                 android:background="@drawable/m5"
                 android:layout_alignWithParentIfMissing="false"
-                android:onClick="OnClickm3"
+                android:onClick="OnClickm4"
                 android:layout_below="@+id/mySurfaceView"
                 android:layout_toRightOf="@+id/imageButton"
                 android:layout_toEndOf="@+id/imageButton" />
+
             <ImageButton
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/imageButton5"
                 android:background="@drawable/m9"
                 android:layout_alignWithParentIfMissing="false"
-                android:onClick="OnClickm3"
+                android:onClick="OnClickm5"
                 android:layout_below="@+id/mySurfaceView"
                 android:layout_toRightOf="@+id/imageButton"
                 android:layout_toEndOf="@+id/imageButton" />
         </LinearLayout>
     </HorizontalScrollView>
-
+    </FrameLayout>
 
 </RelativeLayout>
