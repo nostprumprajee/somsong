@@ -47,7 +47,7 @@ public class Tryss extends Activity {
         Intent intent3 = new Intent(Tryss.this,Camw3.class);
         startActivity(intent3);
     }
-//sdsjdoijsdfoj kuy
+
 
 }
 
