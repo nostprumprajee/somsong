@@ -5,8 +5,8 @@
     android:background="@drawable/mysomsong1">
 
     <Button
-        android:layout_width="160dp"
-        android:layout_height="161dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:id="@+id/kom"
         android:layout_gravity="center_vertical"
         android:layout_weight="0.28"
@@ -18,8 +18,8 @@
         android:onClick="OnClickdekom"/>
 
     <Button
-        android:layout_width="160dp"
-        android:layout_height="161dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:id="@+id/button7"
         android:layout_gravity="center_vertical"
         android:background="@drawable/dimon"
@@ -31,8 +31,8 @@
         android:onClick="OnClickdedai"/>
 
     <Button
-        android:layout_width="160dp"
-        android:layout_height="161dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:id="@+id/button8"
         android:background="@drawable/re"
         android:layout_below="@+id/button7"
@@ -41,8 +41,8 @@
         android:onClick="OnClickdere"/>
 
     <Button
-        android:layout_width="160dp"
-        android:layout_height="161dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:id="@+id/button10"
         android:layout_alignTop="@+id/button8"
         android:layout_alignRight="@+id/button7"
