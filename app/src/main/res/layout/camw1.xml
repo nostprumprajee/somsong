@@ -41,6 +41,7 @@
         android:layout_gravity="bottom"
         android:layout_below="@+id/mySurfaceView"
         android:layout_alignParentLeft="true"
+        android:background="#33FFFF00"
         android:layout_alignParentStart="true">
 
         <LinearLayout

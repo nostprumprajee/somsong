@@ -39,6 +39,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:background="#33FFFF00"
+
 
         android:id="@+id/horizontalScrollView3"
         android:layout_below="@+id/mySurfaceView"
