@@ -63,15 +63,19 @@ public class Camm1 extends Activity implements SurfaceHolder.Callback {
         mPreview.getHolder().setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 //   *** end old ****
 
+        // facedetect **
+
+
+
+        // *** end face
+
 
 
 
     }
-    // facedetect **
 
+    
 
-
-    // *** end face
     public void OnClickm1(View view){
         ImageView mm = (ImageView)findViewById(R.id.myImageView);
         mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.m1));
