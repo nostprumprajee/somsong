@@ -44,9 +44,7 @@ import android.util.SparseArray;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import com.google.android.gms.vision.Frame;
-import com.google.android.gms.vision.face.Face;
-import com.google.android.gms.vision.face.FaceDetector;
+
 
 public class Camm1 extends Activity implements SurfaceHolder.Callback {
     Camera mCamera;
@@ -69,6 +67,11 @@ public class Camm1 extends Activity implements SurfaceHolder.Callback {
 
 
     }
+    // facedetect **
+
+
+
+    // *** end face
     public void OnClickm1(View view){
         ImageView mm = (ImageView)findViewById(R.id.myImageView);
         mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.m1));
