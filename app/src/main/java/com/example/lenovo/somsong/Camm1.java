@@ -30,6 +30,21 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.RectF;
+import android.graphics.drawable.BitmapDrawable;
+import android.os.Bundle;
+import android.util.SparseArray;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+
 
 public class Camm1 extends Activity implements SurfaceHolder.Callback {
     Camera mCamera;
@@ -46,9 +61,21 @@ public class Camm1 extends Activity implements SurfaceHolder.Callback {
         mPreview = (SurfaceView)findViewById(R.id.preview);
         mPreview.getHolder().addCallback(this);
         mPreview.getHolder().setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+//   *** end old ****
+
+        // facedetect **
+
+
+
+        // *** end face
+
+
 
 
     }
+
+    
+
     public void OnClickm1(View view){
         ImageView mm = (ImageView)findViewById(R.id.myImageView);
         mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.m1));
