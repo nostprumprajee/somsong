@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Home extends AppCompatActivity {
-
+//ปุ่มเมนูหลักกดเพื่อไปยังหน้าอื่นๆ
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

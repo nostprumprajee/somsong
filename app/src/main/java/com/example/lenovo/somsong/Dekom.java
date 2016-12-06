@@ -62,7 +62,7 @@ public class Dekom extends Activity {
                 view.setDrawingCacheEnabled(true);
                 Bitmap bm = Bitmap.createBitmap(view.getDrawingCache());
                 view.setDrawingCacheEnabled(false);
-
+//โค้ดเซฟไฟล์รูปภาพ
                 try {
                     Date d = new Date();
                     String filename  = (String)DateFormat.format("kkmmss-MMddyyyy"
@@ -93,7 +93,7 @@ public class Dekom extends Activity {
 
 
     }
-
+    //กดเปลี่ยนทรงผมของการออกแบบ
     public void addListenerOnButton() {
 
         image = (ImageView) findViewById(R.id.imageView1);

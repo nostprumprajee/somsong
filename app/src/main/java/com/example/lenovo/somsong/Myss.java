@@ -48,7 +48,7 @@ public class Myss extends Activity {
         setContentView(R.layout.myss);
 
         imageView1 = (ImageView)findViewById(R.id.imageView);
-
+//ดึงรูปภาพจากตัวเครื่อง
         Button buttonIntent = (Button)findViewById(R.id.buttonIntent);
         buttonIntent.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -58,7 +58,7 @@ public class Myss extends Activity {
                         , "Select Picture"), REQUEST_GALLERY);
             }
         });
-// facedetect ***
+// facedetection *** โค้ดนี้ใช้ได้เฉพาะ ภาพนิ่ง
         Button btn = (Button) findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
 

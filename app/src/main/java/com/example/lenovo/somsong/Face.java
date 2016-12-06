@@ -15,6 +15,7 @@ public class Face extends Activity {
              super.onCreate(savedInstanceState);
              setContentView(R.layout.face);
     }
+    //กดไปยังโครงหน้าต่างๆตามที่เลือก
     public void OnClickKom(View view) {
         Button kombut = (Button) findViewById(R.id.kom);
         Intent intentkom = new Intent(Face.this, Kom.class);

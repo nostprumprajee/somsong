@@ -11,6 +11,7 @@ import android.widget.Button;
  */
 public class Pop extends Activity {
     @Override
+    //เลือกทรงผมยอดนิยมชายหญิง
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pop);

@@ -9,6 +9,7 @@ import android.widget.Button;
 /**
  * Created by lenovo on 27/8/2559.
  */
+//ปุ่มเมนูเลือกโครงหน้าออกแบบทรงผม
 public class Ssdesign extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

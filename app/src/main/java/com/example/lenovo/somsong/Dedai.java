@@ -51,7 +51,7 @@ public class Dedai extends Activity  {
                 view.setDrawingCacheEnabled(true);
                 Bitmap bm = Bitmap.createBitmap(view.getDrawingCache());
                 view.setDrawingCacheEnabled(false);
-
+//เซฟไฟล์รูปภาพ
                 try {
                     Date d = new Date();
                     String filename  = (String) DateFormat.format("kkmmss-MMddyyyy"
@@ -81,6 +81,7 @@ public class Dedai extends Activity  {
 
 
     }
+    //กดเปลี่ยนทรงผมของการออกแบบ
 
     public void addListenerOnButton() {
 

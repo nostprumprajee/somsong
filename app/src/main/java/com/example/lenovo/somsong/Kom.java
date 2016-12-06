@@ -9,6 +9,8 @@ import android.widget.Button;
 /**
  * Created by lenovo on 26/8/2559.
  */
+
+//คำแนะนำทรงผม
 public class Kom extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

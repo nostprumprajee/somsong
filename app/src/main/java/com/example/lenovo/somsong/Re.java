@@ -6,6 +6,7 @@ import android.os.Bundle;
 /**
  * Created by lenovo on 27/8/2559.
  */
+//คำแนะนำทรงผม
 public class Re extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 /**
  * Created by lenovo on 28/8/2559.
  */
+//ฟังก์ชั้นหลักทดลองสมทรงกดแล้วจะเชื่องโยงไปยังหน้าที่เปิดกล้องหน้า
 public class Tryss extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

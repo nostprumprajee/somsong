@@ -9,6 +9,7 @@ import android.widget.Button;
 /**
  * Created by lenovo on 25/8/2559.
  */
+//เมนูคำแนะนำทรงผมที่เหมาะกับใบหน้า
 public class Ssreccom extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

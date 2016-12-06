@@ -42,7 +42,7 @@ public class Dere extends Activity {
                 view.setDrawingCacheEnabled(true);
                 Bitmap bm = Bitmap.createBitmap(view.getDrawingCache());
                 view.setDrawingCacheEnabled(false);
-
+//เซฟไฟล์รูปภาพ
                 try {
                     Date d = new Date();
                     String filename  = (String) DateFormat.format("kkmmss-MMddyyyy"
@@ -72,7 +72,7 @@ public class Dere extends Activity {
 
 
     }
-
+//เปลี่ยนทรงผม
     public void addListenerOnButton() {
 
         image = (ImageView) findViewById(R.id.imageView1);
