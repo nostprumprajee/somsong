@@ -88,13 +88,14 @@ public class Myss extends Activity {
 
                 Frame frame = new Frame.Builder().setBitmap(myBitmap).build();
                 SparseArray<Face> faces = faceDetector.detect(frame);
-
+//รับค่าตำแหน่งใบหน้า
                 for(int i=0; i<faces.size(); i++) {
                     Face thisFace = faces.valueAt(i);
                     float x1 = thisFace.getPosition().x;
                     float y1 = thisFace.getPosition().y;
                     float x2 = x1 + thisFace.getWidth();
                     float y2 = y1 + thisFace.getHeight();
+                    //วาดกรอบสีแดงบนตำแหน่งใบหน้านั้น
                     tempCanvas.drawRoundRect(new RectF(x1, y1, x2, y2), 2, 2, myRectPaint);
                 }
                 myImageView.setImageDrawable(new BitmapDrawable(getResources(),tempBitmap));
