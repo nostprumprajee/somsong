@@ -29,8 +29,11 @@ import android.view.View.OnClickListener;
 /**
  * Created by lenovo on 27/8/2559.
  */
+
+//หน้าที่เชื่อมกับหน้า dedai.xml
 public class Dedai extends Activity  {
 
+    //แต่ละปุ่มแทนการเลือกทรงผมแต่ละทรง
     Button button1;
     Button button2;
     Button button3;
@@ -44,6 +47,8 @@ public class Dedai extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dedai);
 
+
+        //code ที่ใช้ในการ save รูปภาพจากหน้าจอไปไว้ในอัลบั้ม MySomsong
         Button btnSaveAll = (Button)findViewById(R.id.savebot);
         btnSaveAll.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -83,7 +88,7 @@ public class Dedai extends Activity  {
     }
 
     public void addListenerOnButton() {
-
+    //รับค่าว่าผู้ใช้กดทรงผมไหนมา และ แสดงผลตามทรงผมที่กดมา
         image = (ImageView) findViewById(R.id.imageView1);
 
 

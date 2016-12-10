@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--หน้าที่ link มาจากหน้าสมทรงแนะนำ ให้เราเลือกเพศ เพื่อเข้าดูทรงผมยอดนิยม-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/somsongrec1">
 
+    <!--ปุ่มเลือกดูทรงผมยอดนิยมเพศหญิง-->
     <Button
         android:layout_width="160dp"
         android:layout_height="65dp"
@@ -17,6 +19,7 @@
         android:onClick="OnClickpopw"
         />
 
+    <!--ปุ่มเลือกดูทรงผมยอดนิยมเพศชาย-->
     <Button
         android:layout_width="160dp"
         android:layout_height="65dp"

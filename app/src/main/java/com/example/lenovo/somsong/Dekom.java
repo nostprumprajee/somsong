@@ -35,8 +35,11 @@ import android.widget.Toast;
 /**
  * Created by lenovo on 27/8/2559.
  */
+
+//หน้าที่เชื่อมกับหน้า dekom.xml
 public class Dekom extends Activity {
 
+    //แต่ละปุ่มแทนการเลือกทรงผมแต่ละทรง
     Button button1;
     Button button2;
     Button button3;
@@ -48,13 +51,9 @@ public class Dekom extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dekom);
-        //mRrootLayout = (ViewGroup) findViewById(R.id.root);
-        //mImageView = (ImageView) mRrootLayout.findViewById(R.id.imageView);
 
-        //RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(200, 200);
-        //mImageView.setLayoutParams(layoutParams);
-        //mImageView.setOnTouchListener(this);
 
+        //code ที่ใช้ในการ save รูปภาพจากหน้าจอไปไว้ในอัลบั้ม MySomsong
         Button btnSaveAll = (Button)findViewById(R.id.savebot);
         btnSaveAll.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -98,7 +97,7 @@ public class Dekom extends Activity {
 
         image = (ImageView) findViewById(R.id.imageView1);
 
-
+//รับค่าว่าผู้ใช้กดทรงผมไหนมา และ แสดงผลตามทรงผมที่กดมา
         button1 = (Button) findViewById(R.id.m1);
         button1.setOnClickListener(new OnClickListener() {
 

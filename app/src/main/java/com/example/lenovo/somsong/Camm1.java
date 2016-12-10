@@ -45,7 +45,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-
+//หน้าที่เชื่อมกับหน้า camm1.xml
 public class Camm1 extends Activity implements SurfaceHolder.Callback {
     Camera mCamera;
 
@@ -61,21 +61,13 @@ public class Camm1 extends Activity implements SurfaceHolder.Callback {
         mPreview = (SurfaceView)findViewById(R.id.preview);
         mPreview.getHolder().addCallback(this);
         mPreview.getHolder().setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
-//   *** end old ****
-
-        // facedetect **
-
-
-
-        // *** end face
-
-
+    //   *** end old ****
 
 
     }
 
     
-
+    //เมื่อคลิกที่รูปทรงผมไหนก็จะแสดงภาพทรงผมนั้นขึ้นที่ imageView
     public void OnClickm1(View view){
         ImageView mm = (ImageView)findViewById(R.id.myImageView);
         mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.m1));
@@ -105,6 +97,7 @@ public class Camm1 extends Activity implements SurfaceHolder.Callback {
         }
         return -1;
     }
+
     public void onResume() {
         Log.d("System","onResume");
         super.onResume();
@@ -118,7 +111,7 @@ public class Camm1 extends Activity implements SurfaceHolder.Callback {
         mCamera.release();
     }
 
-
+    //code เรียกใช้งาน auto focus
     public void surfaceChanged(SurfaceHolder arg0
             , int arg1, int arg2, int arg3) {
         Log.d("CameraSystem","surfaceChanged");

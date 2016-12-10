@@ -6,8 +6,10 @@ import android.os.Bundle;
 /**
  * Created by lenovo on 27/8/2559.
  */
+//หน้าที่เชื่อมกับหน้า popman.xml
 public class Popman extends Activity {
     @Override
+    //แสดงผลหน้า popman.xml
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.popman);

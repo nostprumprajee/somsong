@@ -18,6 +18,7 @@ import android.widget.ImageView;
 
 import java.util.List;
 
+//หน้าที่เชื่อมกับหน้า camw1.xml
 public class Camw1 extends Activity implements SurfaceHolder.Callback {
     Camera mCamera;
 
@@ -34,6 +35,8 @@ public class Camw1 extends Activity implements SurfaceHolder.Callback {
         mPreview.getHolder().addCallback(this);
         mPreview.getHolder().setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
     }
+
+    //เมื่อคลิกที่รูปทรงผมไหนก็จะแสดงภาพทรงผมนั้นขึ้นที่ imageView
     public void OnClickm6(View view) {
         ImageView mm = (ImageView) findViewById(R.id.myImageView);
         mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.w3));
@@ -77,7 +80,7 @@ public class Camw1 extends Activity implements SurfaceHolder.Callback {
         mCamera.release();
     }
 
-
+    //code เรียกใช้งาน auto focus
     public void surfaceChanged(SurfaceHolder arg0
             , int arg1, int arg2, int arg3) {
         Log.d("CameraSystem", "surfaceChanged");

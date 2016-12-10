@@ -36,6 +36,8 @@ import com.google.android.gms.vision.face.FaceDetector;
 /**
  * Created by lenovo on 28/8/2559.
  */
+
+//หน้าที่เชื่อมกับหน้า myss.xml
 public class Myss extends Activity {
     public static final int REQUEST_GALLERY = 1;
 
@@ -47,8 +49,10 @@ public class Myss extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myss);
 
+
         imageView1 = (ImageView)findViewById(R.id.imageView);
 
+        //ปุ่ม** สำหรับเลือกไฟล์ภาพมาจากอัลบั้มในมือถือ
         Button buttonIntent = (Button)findViewById(R.id.buttonIntent);
         buttonIntent.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -58,7 +62,7 @@ public class Myss extends Activity {
                         , "Select Picture"), REQUEST_GALLERY);
             }
         });
-// facedetect ***
+// facedetect *** (ปุ่ม process ในหน้าสมทรงของฉัน)
         Button btn = (Button) findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
 
@@ -104,7 +108,7 @@ public class Myss extends Activity {
 
     }
 
-
+    //method*** สำหรับเลือกไฟล์ภาพมาจากอัลบั้มในมือถือ
     public void onActivityResult(int requestCode, int resultCode
             , Intent data) {
         if (requestCode == REQUEST_GALLERY && resultCode == RESULT_OK) {
