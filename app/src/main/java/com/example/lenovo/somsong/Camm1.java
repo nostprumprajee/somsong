@@ -75,7 +75,7 @@ public class Camm1 extends Activity implements SurfaceHolder.Callback {
     }
 
     
-// ฟังก์ชั่นเมื่อกดเลือกทรงผมไหนให้แสดงทรงผมนั้นๆ
+// ฟังก์ชั่นเมื่อกดเลือกทรงผมไหนให้แสดงทรงผมนั้นๆตามที่กด
     public void OnClickm1(View view){
         ImageView mm = (ImageView)findViewById(R.id.myImageView);
         mm.setBackgroundDrawable(getResources().getDrawable(R.drawable.m1));
