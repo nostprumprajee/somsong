@@ -68,6 +68,9 @@ public class Myss extends Activity {
 
             public void onClick(View v) {
                 ImageView myImageView = (ImageView) findViewById(R.id.imageView);
+                if (myImageView.getDrawable() == null){
+                    new AlertDialog.Builder(v.getContext()).setMessage("Please select the photo first.").show();
+                    return;}
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inMutable=true;
 
