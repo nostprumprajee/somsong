@@ -20,9 +20,10 @@ import java.util.Date;
 /**
  * Created by lenovo on 27/8/2559.
  */
+//หน้าที่เชื่อมกับหน้า derectang.xml
 public class Derectang extends Activity {
 
-
+    //แต่ละปุ่มแทนการเลือกทรงผมแต่ละทรง
     Button button1;
     Button button2;
     Button button3;
@@ -35,6 +36,8 @@ public class Derectang extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.derectang);
+
+        //code ที่ใช้ในการ save รูปภาพจากหน้าจอไปไว้ในอัลบั้ม MySomsong
         Button btnSaveAll = (Button) findViewById(R.id.savebot);
         btnSaveAll.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -74,7 +77,7 @@ public class Derectang extends Activity {
 
         image = (ImageView) findViewById(R.id.imageView1);
 
-
+//รับค่าว่าผู้ใช้กดทรงผมไหนมา และ แสดงผลตามทรงผมที่กดมา
         button1 = (Button) findViewById(R.id.m1);
         button1.setOnClickListener(new View.OnClickListener() {
 

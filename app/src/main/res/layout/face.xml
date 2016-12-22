@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--หน้าสำหรับเลือกรูปแบบหน้า เพื่ออ่านคำแนะนำในการตัดผมสำหรับรูปแบบหน้าต่างๆ-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/somsongrec2"
     android:weightSum="1">
 
+    <!--ปุ่มคำแนะนำสำหรับรูปแบบหน้ากลม-->
     <Button
         android:layout_width="160dp"
         android:layout_height="161dp"
@@ -19,6 +21,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="20dp" />
 
+    <!--ปุ่มคำแนะนำสำหรับรูปแบบหน้าเพชร-->
     <Button
         android:layout_width="160dp"
         android:layout_height="161dp"
@@ -31,6 +34,7 @@
         android:layout_marginRight="20dp"
         android:onClick="OnClickdia"/>
 
+    <!--ปุ่มคำแนะนำสำหรับรูปแบบหน้ารี-->
     <Button
         android:layout_width="160dp"
         android:layout_height="161dp"
@@ -42,6 +46,7 @@
         android:layout_marginTop="20dp"
         android:onClick="OnClickre"/>
 
+    <!--ปุ่มคำแนะนำสำหรับรูปแบบหน้าเหลี่ยม-->
     <Button
         android:layout_width="160dp"
         android:layout_height="161dp"

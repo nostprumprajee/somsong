@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lenovo.somsong">
+    <!-- ขออนุญาติเปิดกล้อง -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
-
+    <!--code ที่ใช้ในการ detcet ใบหน้า-->
     <meta-data
         android:name="com.google.android.gms.vision.DEPENDENCIES"
         android:value="face" />
+    <!--รูปของ application -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--code เพื่อเปิดไปยังหน้าต่างๆ ทั้งหมด 19 หน้า เป็นการ run activity -->
         <activity android:name=".Ssreccom"/>
         <activity android:name=".Pop"/>
         <activity android:name=".Face"/>
@@ -38,19 +41,10 @@
         <activity android:name=".Re"/>
         <activity android:name=".Dere"/>
         <activity android:name=".Myss"/>
-
         <activity android:name=".Camm1"/>
-        <activity android:name=".Camm2"/>
-        <activity android:name=".Camm3"/>
-
         <activity android:name=".Dekom"/>
-
         <activity android:name=".Camw1"/>
-        <activity android:name=".Camw2"/>
-        <activity android:name=".Camw3"/>
-
         <activity android:name=".Dedai"/>
-        <activity android:name=".Cameram1"/>
         <activity android:name=".Tryss"/>
     </application>
 

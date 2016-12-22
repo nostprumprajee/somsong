@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--หน้าที่ link มาจากการกดปุ่ม ออกแบบสมทรง ในหน้าเมนูหลัก
+จะมีรูปแบบใบหน้าให้เลือก เพื่อนำไปรวมกับทรงผมต่างๆ-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mysomsong1">
 
+    <!--ปุ่มเลือกรูปแบบใบหน้ากลม-->
     <Button
         android:layout_width="140dp"
         android:layout_height="140dp"
@@ -17,6 +20,7 @@
         android:layout_alignParentStart="true"
         android:onClick="OnClickdekom"/>
 
+    <!--ปุ่มเลือกรูปแบบใบหน้าเพชร-->
     <Button
         android:layout_width="140dp"
         android:layout_height="140dp"
@@ -30,6 +34,7 @@
         android:layout_marginBottom="20dp"
         android:onClick="OnClickdedai"/>
 
+    <!--ปุ่มเลือกรูปแบบใบหน้ารี-->
     <Button
         android:layout_width="140dp"
         android:layout_height="140dp"
@@ -40,6 +45,7 @@
         android:layout_alignStart="@+id/kom"
         android:onClick="OnClickdere"/>
 
+    <!--ปุ่มเลือกรูปแบบใบหน้าเหลี่ยม-->
     <Button
         android:layout_width="140dp"
         android:layout_height="140dp"
