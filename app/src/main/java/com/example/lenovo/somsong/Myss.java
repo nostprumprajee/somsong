@@ -95,7 +95,6 @@ public class Myss extends Activity {
 
                 Frame frame = new Frame.Builder().setBitmap(myBitmap).build();
                 SparseArray<Face> faces = faceDetector.detect(frame);
-
                 for(int i=0; i<faces.size(); i++) {
                     Face thisFace = faces.valueAt(i);
                     float x1 = thisFace.getPosition().x;
