@@ -14,9 +14,9 @@ import android.widget.Button;
 //หน้าที่เชื่อมกับหน้า popwo.xml
 public class Popwo extends Activity {
     @Override
-
     //แสดงผลหน้า popwo.xml
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.popwo);
-    }}
+    }
+}

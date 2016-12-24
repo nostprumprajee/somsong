@@ -12,7 +12,7 @@
         android:foregroundGravity="bottom"
         android:id="@+id/horizontalScrollView2"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="false"
+        android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true">
 
 

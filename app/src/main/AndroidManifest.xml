@@ -3,8 +3,10 @@
     package="com.example.lenovo.somsong">
     <!-- ขออนุญาติเปิดกล้อง -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- ขออนุญาติใช้ที่จัดเก็ฐข้อมูล -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-feature android:name="android.hardware.camera" />
+    <!-- auto focus -->
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <!--code ที่ใช้ในการ detcet ใบหน้า-->
     <meta-data
