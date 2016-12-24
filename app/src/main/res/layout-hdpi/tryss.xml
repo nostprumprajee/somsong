@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--หน้าที่ limk มาจากเมนูทดลองสมทรง จะให้เลือกว่าจะทดลองทรงผมของเพศไหน-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home">
+
+    <!--ปุ่มเลือกเพศชาย-->
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@drawable/man"
+        android:id="@+id/button6"
+        android:layout_marginLeft="47dp"
+        android:onClick="OnClickman"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--ปุ่มเลือกเพศหญิง-->  <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@drawable/woman"
+        android:id="@+id/button12"
+        android:onClick="onClickwoman"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp" />
+</RelativeLayout>

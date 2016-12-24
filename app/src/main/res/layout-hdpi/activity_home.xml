@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--หน้าหลักของ application -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/home"
+    tools:context="com.example.lenovo.somsong.Home">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:height="210dp"
+        android:background="#00ffffff"
+        android:clickable="false" />
+    <!--ปุ่มlinkไปหน้าสมทรงแนะนำ-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/ssrec"
+        android:onClick="OnClickrec"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ssrecbot"
+        android:clickable="true"
+        android:layout_marginTop="5dp" />
+
+    <!--ปุ่มlinkไปหน้าทดลองสมทรง-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/button3"
+        android:background="@drawable/tryssbot"
+        android:clickable="true"
+        android:layout_below="@+id/ssrec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="OnClicktryss"
+        android:layout_marginTop="12dp" />
+
+    <!--ปุ่มlinkไปหน้าออกแบบสมทรง-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ssdebot"
+        android:clickable="true"
+        android:onClick="OnClickde"
+        android:layout_marginTop="12dp" />
+
+    <!--ปุ่มlinkไปหน้าสมทรงของฉัน-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/myssbot"
+        android:clickable="true"
+        android:onClick="OnClickmyss"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--หน้านี้จะเป็นที่ link มาจากหน้าเลือกเพศจากเมนูทดลองสมทรง
+เป็นการทดลองทรงผมชายโดยที่มีทรงผมให้เลือกอยู่ใน ScorllView ด้านล่าง-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/mySurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+//พื้นที่แสดงภาพจากกล้อง
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/preview"
+
+
+            />
+
+        <!--พื้นที่ ที่เมื่อเราเลือกทรงผมแล้ว ทรงผมที่เลือกจะขึ้นไปปรากฎ-->
+        <LinearLayout
+            android:layout_below="@id/mySurfaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+//พื้นที่แสดงทรงผม
+            <ImageView android:id="@+id/myImageView"
+                android:layout_width="479dp"
+                android:layout_height="408dp"
+
+                />
+        </LinearLayout>
+
+
+    <!--ScrollView สำหรับเลือกทรงผม-->
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#33FFFF00"
+
+
+        android:id="@+id/horizontalScrollView3"
+        android:layout_below="@+id/mySurfaceView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mySurfaceView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <!--ทรงผมต่างๆ-->
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton3"
+                android:background="@drawable/m1"
+                android:onClick="OnClickm1"
+                android:layout_alignTop="@+id/imageButton2"
+                android:layout_toRightOf="@+id/imageButton2"
+                android:layout_toEndOf="@+id/imageButton2" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton"
+                android:background="@drawable/m2"
+                android:onClick="OnClickm2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/m7"
+                android:layout_alignWithParentIfMissing="false"
+                android:onClick="OnClickm3"
+                android:layout_below="@+id/mySurfaceView"
+                android:layout_toRightOf="@+id/imageButton"
+                android:layout_toEndOf="@+id/imageButton" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton4"
+                android:background="@drawable/m5"
+                android:layout_alignWithParentIfMissing="false"
+                android:onClick="OnClickm4"
+                android:layout_below="@+id/mySurfaceView"
+                android:layout_toRightOf="@+id/imageButton"
+                android:layout_toEndOf="@+id/imageButton" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton5"
+                android:background="@drawable/m9"
+                android:layout_alignWithParentIfMissing="false"
+                android:onClick="OnClickm5"
+                android:layout_below="@+id/mySurfaceView"
+                android:layout_toRightOf="@+id/imageButton"
+                android:layout_toEndOf="@+id/imageButton" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    </FrameLayout>
+
+</RelativeLayout>
