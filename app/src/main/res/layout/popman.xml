@@ -42,11 +42,7 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/imageView5"
                 android:background="@drawable/oppa4"/>
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/imageView6"
-                android:background="@drawable/oppa5"/>
+
         </LinearLayout>
     </HorizontalScrollView>
 

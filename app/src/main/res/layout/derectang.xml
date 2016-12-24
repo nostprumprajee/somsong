@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mysomsong2"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
+
     >
     <requestFocus />
 
@@ -16,6 +15,7 @@
         android:id="@+id/LOL1">
         <!--รูปใบหน้าเหลี่ยม-->
         <ImageView
+            android:contentDescription="@string/common_open_on_phone"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/imageView1"
@@ -42,9 +42,10 @@
             android:layout_height="50dp"
             android:id="@+id/savebot"
             android:background="@drawable/saveicon"
-            android:layout_gravity="right|top"
+            android:layout_gravity="end|top"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
 
 
     </FrameLayout>
@@ -60,39 +61,45 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
             <!--ทรงผมต่างๆ-->
             <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:id="@+id/m1"
                 android:background="@drawable/m1"
-                android:layout_alignParentBottom="true" />
+                 />
 
             <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:id="@+id/m2"
                 android:background="@drawable/m2"/>
 
             <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:id="@+id/m3"
                 android:background="@drawable/m7"/>
             <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:id="@+id/w1"
                 android:background="@drawable/w3"/>
             <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:id="@+id/w2"
                 android:background="@drawable/w4"/>
             <Button
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:id="@+id/w3"
