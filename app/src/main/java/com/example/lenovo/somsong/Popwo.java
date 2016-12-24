@@ -11,7 +11,6 @@ import android.widget.Button;
 /**
  * Created by lenovo on 27/8/2559.
  */
-
 //หน้าที่เชื่อมกับหน้า popwo.xml
 public class Popwo extends Activity {
     @Override
