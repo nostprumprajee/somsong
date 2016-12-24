@@ -8,8 +8,8 @@
 
     <!--ปุ่มคำแนะนำสำหรับรูปแบบหน้ากลม-->
     <Button
-        android:layout_width="160dp"
-        android:layout_height="161dp"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:id="@+id/kom"
         android:layout_gravity="center_vertical"
         android:layout_weight="0.28"
@@ -23,8 +23,8 @@
 
     <!--ปุ่มคำแนะนำสำหรับรูปแบบหน้าเพชร-->
     <Button
-        android:layout_width="160dp"
-        android:layout_height="161dp"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:id="@+id/button7"
         android:layout_gravity="center_vertical"
         android:background="@drawable/dimon"
@@ -36,8 +36,8 @@
 
     <!--ปุ่มคำแนะนำสำหรับรูปแบบหน้ารี-->
     <Button
-        android:layout_width="160dp"
-        android:layout_height="161dp"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:id="@+id/button8"
         android:layout_below="@+id/kom"
         android:layout_alignLeft="@+id/kom"
@@ -48,8 +48,8 @@
 
     <!--ปุ่มคำแนะนำสำหรับรูปแบบหน้าเหลี่ยม-->
     <Button
-        android:layout_width="160dp"
-        android:layout_height="161dp"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
         android:id="@+id/button10"
         android:layout_alignTop="@+id/button8"
         android:layout_alignRight="@+id/button7"
