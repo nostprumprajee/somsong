@@ -1,13 +1,19 @@
 package com.example.lenovo.somsong;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class Home extends AppCompatActivity {
-//ปุ่มเมนูหลักกดเพื่อไปยังหน้าอื่นๆ
+
+
+    //ปุ่มเมนูหลักกดเพื่อไปยังหน้าอื่นๆ
     @Override
     //หน้าที่เชื่อมกับหน้า activity_home.xml
     protected void onCreate(Bundle savedInstanceState) {

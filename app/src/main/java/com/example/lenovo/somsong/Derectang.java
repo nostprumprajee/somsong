@@ -1,5 +1,8 @@
 package com.example.lenovo.somsong;
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +30,19 @@ import java.util.Date;
 //หน้าที่เชื่อมกับหน้า derectang.xml
 public class Derectang extends Activity {
 
+    private static final String TAG = "CAMERA";
+    static final int  REQUEST_STORAGE_PERMISSION = 1;
+    private boolean checkPermission(){
+        if (android.os.Build.VERSION.SDK_INT >= 23 &&
+                ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)==
+                        PackageManager.PERMISSION_DENIED) {
+            requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_STORAGE_PERMISSION);
+            return false;
+        }else{
+            return true;
+        }
+    }
+
     //แต่ละปุ่มแทนการเลือกทรงผมแต่ละทรง
     Button button1;
     Button button2;
@@ -43,7 +59,7 @@ public class Derectang extends Activity {
 
         //code ที่ใช้ในการ save รูปภาพจากหน้าจอไปไว้ในอัลบั้ม MySomsong
         Button btnSaveAll = (Button) findViewById(R.id.savebot);
-        btnSaveAll.setOnClickListener(new View.OnClickListener() {
+        if(checkPermission()) {  btnSaveAll.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 View view = findViewById(android.R.id.content).getRootView();
                 view.setDrawingCacheEnabled(true);
@@ -71,7 +87,7 @@ public class Derectang extends Activity {
                     e.printStackTrace();
                 }
             }
-        });
+        });}
         addListenerOnButton();
 
 //เปลี่ยนทรงผม

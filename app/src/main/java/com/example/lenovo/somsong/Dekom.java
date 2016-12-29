@@ -1,5 +1,8 @@
 package com.example.lenovo.somsong;
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,6 +45,18 @@ import android.widget.Toast;
 
 //หน้าที่เชื่อมกับหน้า dekom.xml
 public class Dekom extends Activity {
+    private static final String TAG = "CAMERA";
+    static final int  REQUEST_STORAGE_PERMISSION = 1;
+    private boolean checkPermission(){
+        if (android.os.Build.VERSION.SDK_INT >= 23 &&
+                ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)==
+                        PackageManager.PERMISSION_DENIED) {
+            requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_STORAGE_PERMISSION);
+            return false;
+        }else{
+            return true;
+        }
+    }
 
     //แต่ละปุ่มแทนการเลือกทรงผมแต่ละทรง
     Button button1;
@@ -58,19 +73,18 @@ public class Dekom extends Activity {
 
 
         //code ที่ใช้ในการ save รูปภาพจากหน้าจอไปไว้ในอัลบั้ม MySomsong
-        Button btnSaveAll = (Button)findViewById(R.id.savebot);
-        btnSaveAll.setOnClickListener(new OnClickListener() {
+        Button btnSaveAll = (Button) findViewById(R.id.savebot);
+        if(checkPermission()) {  btnSaveAll.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 View view = findViewById(android.R.id.content).getRootView();
                 view.setDrawingCacheEnabled(true);
                 Bitmap bm = Bitmap.createBitmap(view.getDrawingCache());
                 view.setDrawingCacheEnabled(false);
-//โค้ดเซฟไฟล์รูปภาพ
+//เซฟไฟล์รูปภาพ
                 try {
                     Date d = new Date();
-                    String filename  = (String)DateFormat.format("kkmmss-MMddyyyy"
+                    String filename = (String) DateFormat.format("kkmmss-MMddyyyy"
                             , d.getTime());
-
                     File mkdirr = new File(Environment.getExternalStorageDirectory()
                             , "/MySomsong/");
                     mkdirr.mkdirs();
@@ -84,18 +98,12 @@ public class Dekom extends Activity {
                             , Toast.LENGTH_SHORT).show();
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
-                }  catch (IOException e) {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-        });
-        addListenerOnButton();
-
-
-
-
-
-    }
+        });}
+        addListenerOnButton();}
     //กดเปลี่ยนทรงผมของการออกแบบ
     public void addListenerOnButton() {
 
