@@ -3,7 +3,10 @@ package com.example.lenovo.somsong;
 /**
  * Created by lenovo on 28/8/2559.
  */
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,8 +27,34 @@ import java.util.List;
 
 public class Camw1 extends Activity implements SurfaceHolder.Callback {
     Camera mCamera;
-
+    private static final String TAG = "CAMERA";
+    static final int  REQUEST_CAMERA_PERMISSION = 1;
     SurfaceView mPreview;
+
+
+    private boolean checkPermission(){
+        if (android.os.Build.VERSION.SDK_INT >= 23 &&
+                ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)==
+                        PackageManager.PERMISSION_DENIED) {
+            requestPermissions(new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA_PERMISSION);
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[]   permissions, int[] grantResults) {
+        switch (requestCode) {
+            case REQUEST_CAMERA_PERMISSION:
+                if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Log.d(TAG,"Premission granted");
+                }else {
+                    Log.d(TAG,"Premission denied");
+                }
+                break;
+        }
+    }
 
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -73,9 +102,13 @@ public class Camw1 extends Activity implements SurfaceHolder.Callback {
     public void onResume() {
         Log.d("System", "onResume");
         //เปิดกล้อง
+
         super.onResume();
-        mCamera = Camera.open(getFrontCameraId());
-        mCamera.setDisplayOrientation(90);
+
+        if(checkPermission()) {
+            mCamera = Camera.open(getFrontCameraId());
+            mCamera.setDisplayOrientation(90);
+        }
     }
 
     public void onPause() {
